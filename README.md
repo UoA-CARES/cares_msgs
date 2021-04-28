@@ -10,6 +10,9 @@ Add a message/serivce/action message as required for CARES projects and update t
 
 ## Messages
 
+### InstanceMasks.msg
+Instance segmentation message for instance segmentation or semantic segmentation detection methods - e.g. pytorch_object_detection or tf_object_detection.
+
 ### StereoCameraInfo.msg
 Stereo Camera information for calibrated stereo pairs - contains intrinsic and extrinsic information for the stereo pair.
 
@@ -17,5 +20,8 @@ Stereo Camera information for calibrated stereo pairs - contains intrinsic and e
 
 ### CalibrationService.srv
 Service message for the calibration service in https://github.com/UoA-CARES/stereo_calibration
+
+### Detection.srv
+Service message for instance or semantic segmentation methods - uses InstanceMasks.msg
 
 ## Actions
