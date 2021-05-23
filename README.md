@@ -24,4 +24,7 @@ Service message for the calibration service in https://github.com/UoA-CARES/ster
 ### Detection.srv
 Service message for instance or semantic segmentation methods - uses InstanceMasks.msg
 
+### ArucoDetect.srv
+Service message for stereo aruco detection 
+
 ## Actions
