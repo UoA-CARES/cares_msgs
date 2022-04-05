@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   geometry_msgs
   sensor_msgs
+  actionlib_msgs
 )
 
 ## In order to add messages, adding .msg files in msg/ is enough.
@@ -33,11 +34,23 @@ endforeach ()
 add_service_files(DIRECTORY srv FILES ${srv_base_files})
 message(STATUS "+++ Services: ${srv_base_files}")
 
+## In order to add actions, adding .action files in action/ is enough
+## Don't need to modify following code.
+file(GLOB action_files "action/*.action")
+foreach (file ${action_files})
+    get_filename_component(file_short ${file} NAME)
+    list(APPEND action_base_files ${file_short})
+endforeach ()
+
+add_action_files(DIRECTORY action FILES ${action_base_files})
+message(STATUS "+++ Actions: ${action_base_files}")
+
 generate_messages(
     DEPENDENCIES
     std_msgs
     geometry_msgs
     sensor_msgs
+    actionlib_msgs
 )
 
 catkin_package(
