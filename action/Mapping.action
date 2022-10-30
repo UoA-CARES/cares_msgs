@@ -6,6 +6,17 @@ uint8 ACTUATE = 3 # e.g. prune/pick/thin
 
 uint8 command
 
+# World Link
+std_msgs/String world_link
+
+# To seek out alignment marker or not before scanning
+std_msgs/Bool get_marker
+
+# Path ID from path factory to generate scanning path
+uint8 path_id
+
+geometry_msgs/PoseStamped init_pose
+
 cares_msgs/ScanningGoal[] scanning_goals
 cares_msgs/MetricExtractionGoal metric_goal
 ---
@@ -25,3 +36,6 @@ uint8 status
 
 cares_msgs/ScanningFeedback[] scanning_feedback
 cares_msgs/MetricExtractionFeedback[] metric_feedback
+
+uint8 count
+uint8 total
