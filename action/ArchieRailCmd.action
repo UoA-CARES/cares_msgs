@@ -8,12 +8,7 @@ uint8 RESET = 2
 uint8 START = 3
 uint8 HOME  = 4
 
-# Rail command
-# Enumeration
-# 0 Move
-# 1 Stop
-# 2 Reset
-# 3-255 reserved for future use
+# 5-255 reserved for future use
 uint8 command
 
 ---
@@ -21,4 +16,14 @@ uint8 command
 geometry_msgs/PoseStamped pose
 ---
 #feedback
+uint8 INIT      = 0
+uint8 MOVING    = 1
+uint8 STOPPING  = 2
+uint8 RESETTING = 3
+uint8 STARTING  = 4
+uint8 HOMING    = 5
+
+# 5-255 reserved for future use
+uint8 status
+
 geometry_msgs/PoseStamped pose
