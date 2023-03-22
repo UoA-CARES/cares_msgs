@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   sensor_msgs
   actionlib_msgs
+  moveit_msgs
 )
 
 ## In order to add messages, adding .msg files in msg/ is enough.
@@ -51,6 +52,7 @@ generate_messages(
     geometry_msgs
     sensor_msgs
     actionlib_msgs
+    moveit_msgs
 )
 
 catkin_package(

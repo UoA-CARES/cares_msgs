@@ -21,6 +21,9 @@ std_msgs/String world_link
 
 # Path to save data too
 std_msgs/String file_path
+
+cares_msgs/PathPlanningConstraints path_constraints
+
 ---
 #result definition
 uint8 result
