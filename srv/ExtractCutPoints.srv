@@ -1,0 +1,3 @@
+---
+cares_msgs/CutPoint[] cut_points
+bool success

@@ -12,6 +12,8 @@ std_msgs/String file_path
 ---
 #result definition
 uint8 result
+cares_msgs/Vine vine
+sensor_msgs/PointCloud2 point_cloud
 ---
 #feedback definition
 #Enumeration

@@ -56,5 +56,5 @@ generate_messages(
 )
 
 catkin_package(
-    CATKIN_DEPENDS message_runtime sensor_msgs
+    CATKIN_DEPENDS message_runtime sensor_msgs moveit_msgs
 )
