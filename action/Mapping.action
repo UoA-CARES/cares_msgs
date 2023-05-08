@@ -19,6 +19,9 @@ geometry_msgs/PoseStamped init_pose
 
 cares_msgs/ScanningGoal[] scanning_goals
 cares_msgs/MetricExtractionGoal metric_goal
+
+cares_msgs/PathPlanningConstraints path_constraints
+
 ---
 #result definition
 uint8 result

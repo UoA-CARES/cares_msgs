@@ -1,0 +1,2 @@
+geometry_msgs/Point cut_point_a
+geometry_msgs/Point cut_point_b
