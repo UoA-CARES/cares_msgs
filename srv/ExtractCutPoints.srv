@@ -1,3 +1,4 @@
+string planning_link 
 ---
 cares_msgs/CutPoint[] cut_points
 bool success

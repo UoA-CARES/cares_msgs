@@ -1,0 +1,3 @@
+cares_msgs/MetricExtractionResult extractor_result
+---
+bool result

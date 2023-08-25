@@ -10,4 +10,5 @@ uint8  node_type
 geometry_msgs/Point position
 
 uint32 sequencial_neighbour_id
+cares_msgs/NodeNeighbourInfo[] neighbours
 

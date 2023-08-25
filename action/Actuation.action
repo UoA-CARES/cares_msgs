@@ -3,6 +3,7 @@ uint8 MOVE = 1
 uint8 ACTUATE = 2
 
 uint8 command
+string link_id
 
 geometry_msgs/PoseStamped target_pose
 geometry_msgs/PoseStamped approach_pose

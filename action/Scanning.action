@@ -10,6 +10,11 @@ uint8 ACTUATE    = 5 # e.g. prune/pick/thin
 # Arm command
 uint8 command
 
+# Marker Type
+uint8 MARKER_ARUCO = 0
+uint8 MARKER_CHARUCO = 1
+uint8 marker_type
+
 # Initial Pose to move arm too
 geometry_msgs/PoseStamped pose
 

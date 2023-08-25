@@ -12,4 +12,11 @@ uint8 volume_constraint
 # Set planning time, if no time is set default planning time will be used
 float64 allowed_planning_time
 
+# Maximum number of retries for planning
+uint8 max_retries
+# Multipler used to increase planning after each unsuccessful attempt
+float64 replanning_multiplier
+# If planning time increases above this value, this value will be used
+float64 max_planning_time
+
 moveit_msgs/Constraints path_constraints

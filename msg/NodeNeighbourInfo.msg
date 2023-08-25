@@ -1,0 +1,3 @@
+uint32 neighbour_id
+float64 internode_length
+float64 internode_width
