@@ -17,6 +17,8 @@ uint8 marker_type
 
 # Initial Pose to move arm too
 geometry_msgs/PoseStamped pose
+geometry_msgs/PointStamped rail_pose
+geometry_msgs/PointStamped rail_marker_target
 
 # Planning Link
 std_msgs/String planning_link

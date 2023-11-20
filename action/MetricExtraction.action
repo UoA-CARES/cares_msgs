@@ -13,6 +13,7 @@ std_msgs/String file_path
 #result definition
 uint8 result
 cares_msgs/Vine vine
+cares_msgs/Fruitlets fruitlets
 sensor_msgs/PointCloud2 point_cloud
 ---
 #feedback definition

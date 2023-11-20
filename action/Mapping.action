@@ -16,6 +16,8 @@ std_msgs/Bool get_marker
 uint8 path_id
 
 geometry_msgs/PoseStamped init_pose
+geometry_msgs/PointStamped rail_pose
+geometry_msgs/PointStamped rail_marker_target
 
 cares_msgs/ScanningGoal[] scanning_goals
 cares_msgs/MetricExtractionGoal metric_goal
